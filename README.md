@@ -69,7 +69,8 @@ with your real API key.
 
 4. Run the app:
 
-fflutter run
+```bash
+flutter run
 ```
 
 ## Running Tests
