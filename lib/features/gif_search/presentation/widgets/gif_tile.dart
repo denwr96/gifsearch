@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
-
+import '../../../../app/navigation/app_navigator.dart';
 import '../../domain/models/gif_item.dart';
 
 class GifTile extends StatelessWidget {
@@ -15,7 +14,7 @@ class GifTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        context.push('/details', extra: gif);
+        AppNavigator.openGifDetails(context, gif);
       },
       child: ClipRRect(
         borderRadius: BorderRadius.circular(12),

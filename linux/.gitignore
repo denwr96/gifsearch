@@ -1,1 +1,65 @@
-flutter/ephemeral
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# VS Code
+.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub/
+.pub-cache/
+
+# Build outputs
+build/
+
+# Flutter generated
+**/flutter_export_environment.sh
+.flutter-ephemeral/
+
+# Android
+android/.gradle/
+android/app/debug
+android/app/profile
+android/app/release
+android/local.properties
+
+# iOS
+ios/Flutter/.last_build_id
+ios/Flutter/ephemeral/
+ios/Flutter/flutter_export_environment.sh
+ios/Pods/
+ios/Runner.xcworkspace/
+ios/.symlinks/
+
+# macOS
+macos/Flutter/ephemeral/
+macos/Pods/
+macos/Runner.xcworkspace/
+macos/.symlinks/
+
+# Linux
+linux/flutter/ephemeral/
+
+# Windows
+windows/flutter/ephemeral/
+
+# Coverage
+coverage/
