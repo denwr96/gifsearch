@@ -26,6 +26,7 @@ A Flutter application for searching GIFs using the Giphy API.
 
 ## Project Structure
 
+```text
 lib/
   app/
     navigation/
@@ -38,6 +39,7 @@ lib/
       data/
       domain/
       presentation/
+```
 
 ## Architecture
 
