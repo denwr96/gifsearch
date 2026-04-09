@@ -12,6 +12,7 @@ A Flutter application for searching GIFs using the Giphy API.
 - GIF detail screen
 - Loading indicators
 - Error handling
+- Offline state and network availability handling
 - Unit tests for controller logic
 
 ## Tech Stack
@@ -21,12 +22,17 @@ A Flutter application for searching GIFs using the Giphy API.
 - GoRouter
 - Dio
 - Giphy API
+- internet_connection_checker_plus
 
 ## Project Structure
 
 lib/
   app/
+    navigation/
+    theme/
   core/
+    constants/
+    network/
   features/
     gif_search/
       data/
@@ -41,9 +47,11 @@ The project uses a simple feature-based structure with separation into:
 - **domain** — app model
 - **presentation** — screens, widgets, controller, providers
 
-Navigation is separated from page widget code using `go_router`.
+Navigation is separated from page widget code using go_router, route constants, and a small navigation helper.
 
 State management is implemented with `Riverpod`.
+
+Network availability handling is implemented with a dedicated internet connection service and Riverpod providers for offline/online UI state.
 
 ## Setup
 
@@ -79,6 +87,7 @@ flutter run
 flutter test
 ```
 
+
 ## Implemented Requirements
 
 ### Technical
@@ -88,6 +97,7 @@ flutter test
 - Pagination
 - Vertical & horizontal orientation support
 - Error handling
+- Network availability handling
 - Unit tests
 
 ### UI
@@ -104,6 +114,7 @@ flutter test
 - Riverpod state management
 - Understandable architecture
 - Navigation separated from page widget code
+- Network availability handling
 
 ## Notes
 
